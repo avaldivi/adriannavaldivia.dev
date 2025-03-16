@@ -1,8 +1,8 @@
 ---
-title: "Senior Software Engineer at TechCorp"
-logo: "/images/companies/techcorp.svg"
-description: "Led the development of a microservices-based e-commerce platform serving 1M+ users. Improved system performance by 40% through optimization and caching strategies. Mentored junior developers and implemented CI/CD pipelines."
-startDate: "2022-01-01"
+title: "Senior Software Engineer @ Intuit Mailchimp"
+logo: "/images/companies/intuit-mailchimp.png"
+description: "Generative AI Prompt, React and PHP development on Account Setup Team. Onboarding team to Typescript."
+startDate: "2024-09-23"
 current: true
 ---
 

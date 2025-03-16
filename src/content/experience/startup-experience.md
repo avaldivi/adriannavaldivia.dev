@@ -1,8 +1,8 @@
 ---
-title: "Full Stack Developer at InnovateLabs"
-logo: "/images/companies/innovatelabs.svg"
-description: "Developed and launched a real-time collaboration platform from scratch. Implemented WebSocket-based features, designed the database schema, and built a responsive front-end using React and Material-UI."
-startDate: "2020-06-01"
-endDate: "2021-12-31"
+title: "Senior UI Engineer @ Salesloft"
+logo: "/images/companies/salesloft.png"
+description: "Developed design system components, rebuilt and refactored Admin UI configuration between various CRM platforms. Managed and lead Front End Guild learning initiative."
+startDate: "2019-01-07"
+endDate: "2024-08-10"
 current: false
 --- 

@@ -4,10 +4,10 @@ export type NavigationItem = {
 };
 
 export const SITE = {
-    name: "ByteKai",
-    title: "Software Engineer & Curious Tinkerer",
+    name: "Adrianna Valdivia",
+    title: "Astrology, Human Design & Software Engineering",
     description: "Personal portfolio and blog",
-    url: "https://bytekai.dev",
+    url: "https://adriannavaldivia.dev",
     defaultImage: "/default-og-image.jpg",
 } as const;
 
@@ -17,8 +17,8 @@ export const NAVIGATION: {
     main: [
         { name: "Home", path: "/" },
         { name: "Blog", path: "/blog" },
-        { name: "Notes", path: "/notes" },
-        { name: "Bookmarks", path: "/bookmarks" }
+        // { name: "Notes", path: "/notes" },
+        // { name: "Bookmarks", path: "/bookmarks" }
     ],
 } as const;
 

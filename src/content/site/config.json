@@ -1,8 +1,8 @@
 {
   "home": {
-    "name": "ByteKai",
-    "title": "Software Engineer & Curious Tinkerer",
-    "introduction": "I’m constantly learning and evolving. I love diving into new ideas and finding creative ways to solve problems.",
+    "name": "Adrianna Valdivia",
+    "title": "Astrology, Human Design & Software Engineering",
+    "introduction": "I’m constantly learning and evolving. I love recognizing patterns in my life experiences as much I do while building software.",
     "sections": {
       "blog": {
         "title": "Writing",
@@ -19,12 +19,12 @@
     },
     "socialLinks": [
       {
-        "platform": "GitHub",
-        "url": "https://github.com/bytekai"
+        "platform": "Github",
+        "url": "https://github.com/avaldivi"
       },
       {
-        "platform": "Twitter",
-        "url": "https://x.com/byteekai"
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/adriannavaldivia"
       }
     ]
   }
