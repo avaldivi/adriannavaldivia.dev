@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
+import SubscribeForm from "../../components/shared/SubscribeForm.astro";
 
 export const getStaticPaths = (async () => {
   const posts = await getCollection("blog");
@@ -35,6 +36,9 @@ const formatDate = (date: Date) => {
       <Content />
     </div>
   </article>
+  {
+    post.data.tags.includes("astrology") && (<SubscribeForm title="Form" />)
+  }
 </BaseLayout>
 
 <style>

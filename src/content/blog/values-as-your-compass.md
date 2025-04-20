@@ -9,7 +9,7 @@ Last month I wrote an article about a quote I read that helped me start reflecti
 
 > **Try to accept the current restrictions and continue to accumulate critical mass for your personal evolutionary springboard.**
 
-You can read about it [here](https://adriannavaldivia.dev/posts/accumulate-critical-mass-for-your-personal-evolutionary-springboard) and how we break down the quote and each respective part and it's meaning.
+You can read about it [here](https://adriannavaldivia.dev/accumulate-critical-mass-for-your-personal-evolutionary-springboard) and how we break down the quote and each respective part and it's meaning.
 
 You might be facing some recent blockages yourself. Perhaps the job market isn't stable enough right now to find your next gig, or you are stuck on a team at work that you find hard to gel with. Maybe you are even stumped creatively and are trying to figure out how to get those creative juices flowing again. I've encountered all these obstacles and have found the situations frustrating, unable to find a way around them, at least temporarily.
 

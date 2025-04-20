@@ -14,7 +14,7 @@
       },
       "experience": {
         "title": "Experience",
-        "viewAllText": "View full résumé"
+        "viewAllText": "View full resume"
       }
     },
     "socialLinks": [
@@ -25,6 +25,10 @@
       {
         "platform": "LinkedIn",
         "url": "https://linkedin.com/in/adriannavaldivia"
+      },
+      {
+        "platform": "Celestial Doses",
+        "url": "https://www.celestialdoses.com"
       }
     ]
   }

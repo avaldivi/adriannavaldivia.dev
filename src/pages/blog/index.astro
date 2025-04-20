@@ -8,13 +8,32 @@ import ContentList from "../../components/shared/ContentList.astro";
 
 const posts = await getCollection("blog", ({ data }) => {
   return import.meta.env.PROD ? !data.draft : true;
-});
+});""
 
 const sortedPosts = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
 ---
 
+<script type="module">
+  window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const message = document.getElementById('subscribed-message');
+
+    if (params.has('sub_id') && message) {
+      message.style.display = 'flex'; // show it
+    }
+  });
+</script>
+
+
 <BaseLayout title="Blog" description="Read my latest blog posts">
   <Container>
+    <div id="subscribed-message" style="display: none;" class="flex items-center justify-center min-h-screen">
+      <h1 class="text-center text-green-700 bg-green-100 p-6 rounded text-3xl font-bold"
+        style="color: #C07FAE;"
+      >
+        🎉 You're subscribed! Check your inbox.
+      </h1>
+    </div>
     <BaseHero title="Blog" description="Read my latest blog posts" />
     <ContentList>
       {
@@ -24,6 +43,7 @@ const sortedPosts = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.p
             description={post.data.description}
             url={`/blog/${post.id}`}
             date={post.data.publishedAt}
+            tags={post.data.tags ?? []}
           />
         ))
       }

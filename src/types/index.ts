@@ -15,4 +15,5 @@ export interface ContentFrontmatter {
     description: string;
     publishedAt: Date;
     draft?: boolean;
+    tags?: string[];
 } 

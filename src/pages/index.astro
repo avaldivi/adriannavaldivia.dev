@@ -40,7 +40,7 @@ const sortedExperiences = experiences.sort(
 );
 
 const projects = await getCollection("projects");
-const featuredProjects = projects.filter((project: CollectionEntry<"projects">) => project.data.featured).slice(0, 3);
+const featuredProjects = projects.filter((project: CollectionEntry<"projects">) => project.data.featured).slice(0, 4);
 ---
 
 <BaseLayout title={`${site.name} - Portfolio`} description={site.introduction}>
@@ -88,7 +88,7 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
     <section class="section">
       <div class="section-header">
         <h2>{site.sections.projects.title}</h2>
-        <a href="/projects">{site.sections.projects.viewAllText}</a>
+        <!-- <a href="/projects">{site.sections.projects.viewAllText}</a> -->
       </div>
       <ContentList>
         {
@@ -116,11 +116,11 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
     <section class="section">
       <div class="section-header">
         <h2>{site.sections.experience.title}</h2>
-        <a href="/experience">{site.sections.experience.viewAllText}</a>
+        <!-- <a href="/experience">{site.sections.experience.viewAllText}</a> -->
       </div>
       <div class="content-list">
         {
-          sortedExperiences.slice(0, 2).map((exp) => (
+          sortedExperiences.slice(0, 3).map((exp) => (
             <article>
               <div class="title-row">
                 <div class="company-info">
@@ -137,6 +137,7 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
         }
       </div>
     </section>
+    <iframe src="https://boundless-iodine-6a4.notion.site/ebd/1dba82930d48808bb1ebccb6ce223e80" width="100%" height="600" frameborder="0" allowfullscreen />
   </Container>
 </BaseLayout>
 
