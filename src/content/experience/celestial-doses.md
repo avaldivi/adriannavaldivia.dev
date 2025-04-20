@@ -1,7 +1,7 @@
 ---
 title: "Founder and CTO @ Celestial Doses"
 logo: "/images/companies/celestial-doses-wb.png"
-description: "Lead the product and technical vision on educational platform on various esoteric systems and build community with Astrology and Human Design enthusiasts and professionals"
+description: "Lead the product and technical vision on an educational platform on various esoteric systems and build community with Astrology and Human Design enthusiasts and professionals"
 startDate: "2025-04-14"
 current: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Quantum Bridge Theory"
-description: "An introduction to my learnings of quantum healing and how it uses popular concepts of quantum physics"
+description: "An introduction to my learnings of quantum healing and how it uses popular concepts from quantum physics"
 publishedAt: 2025-04-20
 tags: ["quantum physics", "quantum healing"]
 ---
