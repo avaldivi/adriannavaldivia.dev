@@ -23,6 +23,7 @@ interface Props {
 }
 
 const { title, description, image = "/default-og-image.jpg", canonicalURL = Astro.url } = Astro.props;
+const absoluteImageURL = new URL(image, Astro.site ?? Astro.url);
 ---
 
 <!doctype html>
@@ -45,13 +46,13 @@ const { title, description, image = "/default-og-image.jpg", canonicalURL = Astr
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={absoluteImageURL} />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={Astro.url} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={image} />
+    <meta property="twitter:image" content={absoluteImageURL} />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
