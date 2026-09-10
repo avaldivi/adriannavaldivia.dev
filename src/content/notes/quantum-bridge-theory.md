@@ -2,7 +2,7 @@
 title: "Quantum Bridge Theory"
 description: "An introduction to my learnings of quantum healing and how it uses popular concepts from quantum physics"
 publishedAt: 2025-04-20
-tags: ["quantum physics", "quantum healing"]
+category: "Quantum Healing"
 ---
 
 Bluesky [thread](https://bsky.app/profile/adriannavaldivia.dev/post/3ljoem3fzi22z) in question in regards to quantum healing

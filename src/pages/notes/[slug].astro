@@ -19,11 +19,12 @@ const formatDate = (date: Date) => {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
 };
 ---
 
-<BaseLayout title={note.data.title} description={note.data.description}>
+<BaseLayout title={note.data.title} description={note.data.description} image={note.data.image}>
   <main>
     <article class="note">
       <header>
@@ -75,6 +76,14 @@ const formatDate = (date: Date) => {
 
   .content {
     line-height: 1.7;
+  }
+
+  .content :global(h2),
+  .content :global(h3) {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: var(--text-color);
   }
 
   @media (max-width: 640px) {

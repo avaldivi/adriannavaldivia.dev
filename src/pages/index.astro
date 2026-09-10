@@ -20,6 +20,7 @@ const formatDate = (date: Date | undefined) => {
     month: "short",
     day: "numeric",
     year: "numeric",
+    timeZone: "UTC",
   });
 };
 
@@ -79,6 +80,13 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
                 )}
               </div>
               <p class="muted-text">{post.data.description}</p>
+              {post.data.tags.length > 0 && (
+                <div class="tags">
+                  {post.data.tags.map((tag) => (
+                    <span>{tag}</span>
+                  ))}
+                </div>
+              )}
             </article>
           ))
         }
@@ -120,7 +128,7 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
       </div>
       <div class="content-list">
         {
-          sortedExperiences.slice(0, 3).map((exp) => (
+          sortedExperiences.map((exp) => (
             <article>
               <div class="title-row">
                 <div class="company-info">

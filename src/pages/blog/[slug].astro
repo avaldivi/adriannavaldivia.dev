@@ -20,17 +20,27 @@ const formatDate = (date: Date) => {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
 };
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description}>
+<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image}>
   <article class="post">
     <header>
       <h1>{post.data.title}</h1>
       <time datetime={post.data.publishedAt.toISOString()}>
         {formatDate(post.data.publishedAt)}
       </time>
+      {
+        post.data.tags.length > 0 && (
+          <div class="tags">
+            {post.data.tags.map((tag) => (
+              <span>{tag}</span>
+            ))}
+          </div>
+        )
+      }
     </header>
     <div class="content">
       <Content />
@@ -66,8 +76,28 @@ const formatDate = (date: Date) => {
     font-size: var(--text-sm);
   }
 
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .tags span {
+    font-size: var(--text-xs);
+    opacity: 0.5;
+  }
+
   .content {
     line-height: 1.7;
+  }
+
+  .content :global(h2),
+  .content :global(h3) {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: var(--text-color);
   }
 
   .content :global(h2) {

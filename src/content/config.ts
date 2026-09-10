@@ -12,6 +12,7 @@ const blog = defineCollection({
         publishedAt: z.coerce.date(),
         draft: z.boolean().optional().default(false),
         tags: z.array(z.string()).optional().default([]),
+        image: z.string().optional(),
     })
 });
 
@@ -82,6 +83,7 @@ const notes = defineCollection({
         publishedAt: z.coerce.date(),
         category: z.string(),
         draft: z.boolean().optional().default(false),
+        image: z.string().optional(),
     })
 });
 
